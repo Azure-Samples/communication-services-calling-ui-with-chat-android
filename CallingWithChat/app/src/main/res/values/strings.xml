@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CallingWithChat</string>
+    <string name="join_teams_meeting_text">Join a Teams meeting and become a participant in the call and chat thread once admitted to the meeting.</string>
+    <string name="join_group_call_text">Join a group call and chat thread that user is a participant of before joining.</string>
+    <string name="demo_teams_call_with_chat_button">Demo Teams call with chat</string>
+    <string name="demo_goup_call_with_chat_button">Demo Goup call with chat</string>
+    <string name="call">Call</string>
+    <string name="end_call">End Call</string>
+    <string name="connect_chat">Connect chat</string>
+    <string name="show_hide_chat">Show/hide chat</string>
 </resources>

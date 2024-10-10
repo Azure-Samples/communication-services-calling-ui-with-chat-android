@@ -19,7 +19,7 @@
             android:id="@+id/startCallButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Call"
+            android:text="@string/call"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="4dp"
             />
@@ -27,7 +27,7 @@
             android:id="@+id/endCallButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="End Call"
+            android:text="@string/end_call"
             android:layout_marginStart="4dp"
             android:visibility="gone"
             />
@@ -36,9 +36,8 @@
             android:id="@+id/connectChatButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Connect chat"
+            android:text="@string/connect_chat"
             app:layout_constraintBottom_toBottomOf="parent"
-
             android:layout_marginStart="4dp"
             />
 
@@ -46,9 +45,9 @@
             android:id="@+id/showHideChatButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show/hide chat"
+            android:text="@string/show_hide_chat"
             android:layout_marginStart="4dp"
-            android:enabled="false"
+            android:visibility="gone"
             />
 
     </LinearLayout>

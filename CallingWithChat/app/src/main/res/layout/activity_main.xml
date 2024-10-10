@@ -18,19 +18,36 @@
         android:padding="4dp"
         >
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join_teams_meeting_text"
+            android:padding="5dp"
+            />
+
         <Button
             android:id="@+id/demoTeamsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Demo Teams call with chat"
+            android:text="@string/demo_teams_call_with_chat_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="20dp"
             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join_group_call_text"
+            android:padding="5dp"
+            />
+
+
         <Button
             android:id="@+id/demoGroupButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Demo Goup call with chat"
+            android:text="@string/demo_goup_call_with_chat_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             />

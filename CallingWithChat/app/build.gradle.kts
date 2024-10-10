@@ -45,8 +45,8 @@ dependencies {
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    implementation("com.azure.android:azure-communication-ui-calling:1.13.0-beta.1")
-    implementation("com.azure.android:azure-communication-ui-chat:1.0.0-beta.3")
+    implementation("com.azure.android:azure-communication-ui-calling:+")
+    implementation("com.azure.android:azure-communication-ui-chat:+")
 
     implementation("com.microsoft.graph:microsoft-graph:6.17.0")
     implementation("com.azure:azure-identity:1.13.3")

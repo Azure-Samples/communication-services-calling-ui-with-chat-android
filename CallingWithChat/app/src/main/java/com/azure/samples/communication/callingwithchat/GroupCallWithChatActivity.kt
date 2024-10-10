@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
 package com.azure.samples.communication.callingwithchat
 
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +17,6 @@ import com.azure.android.communication.ui.calling.CallComposite
 import com.azure.android.communication.ui.calling.CallCompositeBuilder
 import com.azure.android.communication.ui.calling.models.CallCompositeCallScreenHeaderViewData
 import com.azure.android.communication.ui.calling.models.CallCompositeCallScreenOptions
-import com.azure.android.communication.ui.calling.models.CallCompositeCallStateCode
 import com.azure.android.communication.ui.calling.models.CallCompositeCustomButtonViewData
 import com.azure.android.communication.ui.calling.models.CallCompositeGroupCallLocator
 import com.azure.android.communication.ui.calling.models.CallCompositeJoinLocator
@@ -26,7 +28,6 @@ import com.azure.android.communication.ui.chat.presentation.ChatThreadView
 import java.util.UUID
 
 class GroupCallWithChatActivity : AppCompatActivity() {
-
     companion object {
         private var callComposite: CallComposite? = null
         private var chatAdapter: ChatAdapter? = null
@@ -37,8 +38,7 @@ class GroupCallWithChatActivity : AppCompatActivity() {
     private val endpoint = ""
     private val communicationUserId = ""
     private val threadId = ""
-    private val userToken =
-        ""
+    private val userToken = ""
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,13 +85,6 @@ class GroupCallWithChatActivity : AppCompatActivity() {
             .multitasking(CallCompositeMultitaskingOptions(true, true))
             .build()
 
-        callComposite.addOnCallStateChangedEventHandler { callState ->
-            if (callState.code == CallCompositeCallStateCode.DISCONNECTED) {
-                findViewById<Button>(R.id.startCallButton).isVisible = true
-                findViewById<Button>(R.id.endCallButton).isVisible = false
-            }
-        }
-
         callComposite.addOnDismissedEventHandler {
             findViewById<Button>(R.id.startCallButton).isVisible = true
             findViewById<Button>(R.id.endCallButton).isVisible = false
@@ -121,8 +114,8 @@ class GroupCallWithChatActivity : AppCompatActivity() {
         chatAdapter.connect(applicationContext)
         GroupCallWithChatActivity.chatAdapter = chatAdapter
 
-        findViewById<Button>(R.id.showHideChatButton).isEnabled = true
-        findViewById<Button>(R.id.connectChatButton).isEnabled = false
+        findViewById<Button>(R.id.showHideChatButton).isVisible = true
+        findViewById<Button>(R.id.connectChatButton).isVisible = false
     }
 
     private fun showChatUI() {

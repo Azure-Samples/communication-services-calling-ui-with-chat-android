@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
 package com.azure.samples.communication.callingwithchat
 
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +28,6 @@ import com.azure.android.communication.ui.chat.presentation.ChatThreadView
 import java.util.UUID
 
 class TeamsMeetingActivity : AppCompatActivity() {
-
     companion object {
         private var callComposite: CallComposite? = null
         private var chatAdapter: ChatAdapter? = null
@@ -113,7 +115,7 @@ class TeamsMeetingActivity : AppCompatActivity() {
         chatAdapter.connect(applicationContext)
         TeamsMeetingActivity.chatAdapter = chatAdapter
 
-        findViewById<Button>(R.id.showHideChatButton).isEnabled = true
+        findViewById<Button>(R.id.showHideChatButton).isVisible = true
     }
 
     private fun showChatUI() {
