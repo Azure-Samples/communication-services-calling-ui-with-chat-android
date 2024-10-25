@@ -1,13 +1,7 @@
-## [project-title] Changelog
+## Calling UI with chat UI sample Changelog
 
-<a name="x.y.z"></a>
-# x.y.z (yyyy-mm-dd)
+Calling UI and Chat UI libraries integration
+# 1.0.0 (2024-10-20)
 
 *Features*
-* ...
-
-*Bug Fixes*
-* ...
-
-*Breaking Changes*
-* ...
+* Initial release of Calling UI and Chat UI libraries integration

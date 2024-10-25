@@ -33,13 +33,12 @@ class GroupCallWithChatActivity : AppCompatActivity() {
         private var chatAdapter: ChatAdapter? = null
     }
 
-    private val groupId = UUID.fromString("")
     private val displayName = "USER_NAME"
-    private val endpoint = ""
-    private val communicationUserId = ""
-    private val threadId = ""
-    private val userToken = ""
-
+    private val endpoint = "ACS_ENDPOINT"
+    private val groupId = UUID.fromString("GROUP_ID")
+    private val threadId = "CHAT_THREAD_ID"
+    private val communicationUserId = "USER_ID"
+    private val userToken = "USER_ACCESS_TOKEN"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

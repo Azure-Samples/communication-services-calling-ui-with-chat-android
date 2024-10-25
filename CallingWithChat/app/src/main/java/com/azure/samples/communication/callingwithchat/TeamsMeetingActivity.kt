@@ -33,13 +33,12 @@ class TeamsMeetingActivity : AppCompatActivity() {
         private var chatAdapter: ChatAdapter? = null
     }
 
-    private val teamsMeetingLink = ""
     private val displayName = "USER_NAME"
-    private val endpoint = ""
-    private val communicationUserId = ""
-    private val threadId = ""
-    private val userToken = ""
-
+    private val endpoint = "ACS_ENDPOINT"
+    private val teamsMeetingLink = "TEAM_MEETING_LINK"
+    private val threadId = "CHAT_THREAD_ID"
+    private val communicationUserId = "USER_ID"
+    private val userToken = "USER_ACCESS_TOKEN"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
