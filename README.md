@@ -5,6 +5,10 @@ The sample is a native Android application that uses the Azure Communication Ser
 
 Additional documentation for this sample can be found on [Microsoft Docs](https://docs.microsoft.com/en-us/azure/communication-services/samples/calling-hero-sample?pivots=platform-android). See this sample's wiki to see updated information on [known issues](https://github.com/Azure-Samples/communication-services-calling-ui-with-chat-android/issues)
 
+<p>
+<img width="30%" alt="image" src="Android.gif">
+</p>
+
 ## Features
 
 This project framework provides the following features:
